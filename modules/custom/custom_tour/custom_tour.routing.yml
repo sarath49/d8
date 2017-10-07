@@ -1,0 +1,9 @@
+custom_tour_example:
+  path: 'custom-d8/tour-example'
+  options:
+    _admin_route: true
+  defaults:
+    _controller: '\Drupal\custom_tour\Controller\CustomTourController::description'
+    _title: 'Custom Tour Example'
+  requirements:
+    _access: 'TRUE'

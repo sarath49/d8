@@ -1,0 +1,8 @@
+name: 'Custom Tour'
+type: module
+description: 'Demonstration of using tour module in d8'
+package: 'Custom D8'
+core: 8.x
+dependencies:
+  - drupal:tour
+  - drupal:toolbar

@@ -1,0 +1,13 @@
+parameters:
+  dino_roar.use_key_value_cache: true
+services:
+  dino_roar.roar_generater:
+    class: Drupal\dino_roar\Jurassic\RoarService
+    arguments:
+     - '@keyValue'
+     - '%dino_roar.use_key_value_cache%'
+  dino_roar:dino_servie:
+    class: Drupal\dino_roar\Jurassic\DinoService
+    arguments: []
+    tags:
+      - { name: event_subscriber }

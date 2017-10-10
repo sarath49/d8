@@ -1,0 +1,23 @@
+custom_fapi.description:
+  path: 'custom-d8/custom-fapi'
+  defaults:
+    _controller: '\Drupal\custom_fapi\Controller\Page::description'
+    _title: 'Form API'
+  requirements:
+    _permission: 'access content'
+
+custom_fapi.simple_form:
+  path: 'custom-d8/custom-fapi/simple-form'
+  defaults:
+    _form: '\Drupal\custom_fapi\Form\SimpleForm'
+    _title: 'Simple Form'
+  requirements:
+    _permission: 'access content'
+
+custom_fapi.input_element:
+  path: 'custom-d8/custom-fapi/input-element'
+  defaults:
+    _form: '\Drupal\custom_fapi\Form\InputElement'
+    _title: 'Input Element'
+  requirements:
+    _permission: 'access content'

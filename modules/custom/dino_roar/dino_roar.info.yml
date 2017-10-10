@@ -1,0 +1,5 @@
+name: Dino Roar
+description: Dino Roar demo
+package: Sample
+core: 8.x
+type: module

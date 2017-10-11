@@ -8,6 +8,6 @@ services:
      - '%dino_roar.use_key_value_cache%'
   dino_roar:dino_servie:
     class: Drupal\dino_roar\Jurassic\DinoService
-    arguments: []
+    arguments: ['@logger.factory']
     tags:
       - { name: event_subscriber }

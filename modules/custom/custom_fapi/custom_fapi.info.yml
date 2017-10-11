@@ -1,0 +1,8 @@
+name: Form API
+type: module
+core: 8.x
+package: 'Custom D8'
+configure: custom_fapi.description
+dependencies:
+  - drupal:node
+  - examples:examples

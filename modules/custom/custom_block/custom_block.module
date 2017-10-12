@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Module file for custom_block.
+ */
+
+ use Drupal\Component\Utility\Unicode;
+ use Drupal\Core\Block\BlockPluginInterface;
+
+ /**
+  * Implements hook_block_view_alter().
+  */
+function custom_block_block_view_alter(array &$build, BlockPluginInterface $block) {
+	 $definition = $block->getPluginDefinition();
+	 if ((!empty($build['#configuration']['label']) && stristr($build['#configuration']['label'], 'uppercase')) 
+	 	|| (!empty($definition['subject']) && stristr($definition['subject'], 'uppercase'))) {
+	    // This will uppercase the block title.
+	    $build['#configuration']['label'] = Unicode::strtoupper($build['#configuration']['label']);
+  	}
+}

@@ -1,0 +1,7 @@
+custom.block.configuration_text:
+  type: block_settings
+  label: 'Custom configuration text block settings'
+  mapping:
+    block_example_string:
+      type: text
+      label: 'Block Contents'

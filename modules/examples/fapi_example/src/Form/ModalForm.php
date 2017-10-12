@@ -97,6 +97,7 @@ class ModalForm extends FormBase {
         '#weight' => -10,
       ];
       $response->addCommand(new HtmlCommand('#fapi-example-modal-form', $form));
+      $response->addCommand(new HtmlCommand('#api-example-message', $form));
     }
     else {
       $title = $form_state->getValue('title');

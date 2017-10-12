@@ -1,0 +1,8 @@
+name: 'Block'
+core: 8.x
+type: module
+package: 'Custom D8'
+dependencies:
+  - drupal:block
+  - drupal:node
+  - examples:examples
